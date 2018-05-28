@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  <!-- _________________________________ This sets up the page_________________________________-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Box +Flow</title>
+
+  <!-- _________________________________ Below are the links to this particular page_________________________________-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!--want the custom to be last because it will show YOUR touches, override the other stuff. -->
+
+  </head>
+
+    <!-- _________________________________ Here I begin the navigtion_________________________________-->
+  <body>
+    <!-- Fixed navbar -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="index.html">Box+Flow</a>
+       </div>
+       <div id="navbar" class="navbar-collapse collapse">
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="instructor.html">Instructors</a></li>
+           <li><a href="prices.html">Price+Schedule</a></li>
+           <li><a href="faq.html">FAQ+Policies</a></li>
+           <li><a href="../">Go Back</a></li>
+             </ul>
+           </li>
+         </ul>
+
+  <!-- _________________________________ This is to set the login section of nav bar_________________________________-->
+    <form class="form-inline">
+           <div class="form-group">
+             <label class="sr-only" for="exampleInputEmail3">Email address</label>
+             <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+           </div>
+           <div class="form-group">
+             <label class="sr-only" for="exampleInputPassword3">Password</label>
+             <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+           </div>
+           <div class="checkbox">
+             <label>
+               <input type="checkbox"> Remember me
+             </label>
+           </div>
+           <button type="submit" class="btn btn-default">Sign in</button>
+    </form>
+       </div><!--/.nav-collapse -->
+     </div>
+   </nav>
+
+<br>
+<br>
+
+
+  <!-- _________________________________ This is for the carousel for the page_________________________________-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/yoga1.png" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1> Bringing Mindfulness To The Fight</h1>
+              <p>Fight + flow are opposites and together they create balance. Thru a 55-minute fight + flow experience, including shadowboxing, heavy bag work + fast flow sequences, we will attempt to reach equilibrium
+                in mind, body + soul.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/front2.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Box + Flow® is for Women who aren't afraid to get messy + Men who aren't ashamed to flow.</h1>
+              <p> Everyday we are confronted with situations out of our control. We choose to fight or we choose to flow. Fight is the fire, our potential; the will to win, the want for more. box + flow® challenges patrons to dig deeper, and search inward to find our fight and then let things flow.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/box.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Our Goals</h1>
+              <p>Consider getting messy on a heavy bag to beats by DMX + Nirvana before craving the solace of your childs' pose. on the mat, we flow fast to open up the shoulders, heart, and mind with to Bon Iver + Ella Fitzgerald. the most skilled fighters have flow in their fight. we urge you to let your mind detach as you flow thru the fight. no anticipation, no expectation. let it be a dance. just let go.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+  <!-- _________________________________ This is the little article sections on the page_________________________________-->
+
+         <hr class="featurette-divider">
+
+         <div class="row featurette">
+           <div class="col-md-7">
+             <h2 class="featurette-heading">Flow thru the <span class="text-muted">Fight</span></h2>
+             <p class="lead"> 35 minutes nonstop: 8 minute shadowbox warm up, gloves on for 9 rounds on the heavy bags, three of which are partner up focused speed + power intervals. this is the heart of the fight, to bring up the adrenaline, sweat + intensity before taking it all off to FLOW.</p>
+           </div>
+           <div class="col-md-5">
+             <img class="featurette-image img-responsive center-block" src="images/box1.png" alt="Generic placeholder image">
+           </div>
+         </div>
+
+         <hr class="featurette-divider">
+
+         <div class="row featurette">
+           <div class="col-md-7 col-md-push-5">
+             <h2 class="featurette-heading"> Fight thru the <span class="text-muted">Flow</span></h2>
+             <p class="lead"> The sweetness after the struggle: a smooth transition from fight to flow, gloves off + crawl to the mat. a flow to reset ensues - a juicy sequence to bring balance to the mind + body. deep breath + flow opens the shoulders, hips, mind + heart, keeping intensity high for a full mind + body workout.</p>
+           </div>
+           <div class="col-md-5 col-md-pull-7">
+             <img class="featurette-image img-responsive center-block" src="images/front1.png" alt="Generic placeholder image">
+           </div>
+         </div>
+
+
+         <!-- /END THE FEATURETTES -->
+
+       </body>
+
+
+
+
+  <!-- _________________________________ This is for the footer_________________________________-->
+  <!-- This is also a nice element that reminds the user of the classes and will link to a schedule! -->
+  <div id="dabar">
+    <strong>New member special: 2-for-1 class $33</strong> <a href="#">Click here to sign up!</a>
+  </div>
+
+
+  <hr> </hr>
+
+  <p><img src="images/map.png" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+  55 Bond St <br> New York, NY 10012 <br> (212) 228-3569 </p>
+
+  <br>
+
+
+  <!-- _________________________________ This is the scripts for the site_________________________________-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+
+function myFunction() {
+var x = document.getElementById("myHeaderNav");
+if (x.className === "desktopNav") {
+  x.className += " mobileNavOn";
+} else {
+  x.className = "desktopNav";
+}
+}
+
+</script>
+
+<style>
+img {
+    float: left;
+}
+  </style>
+
+
+</html>

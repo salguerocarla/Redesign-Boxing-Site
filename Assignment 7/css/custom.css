@@ -1,0 +1,244 @@
+/*Carla Salguero --> custom.css page. This is just one of the style sheets I have.  */
+
+/* ________________________________This is the background________________________________ */
+body{
+  background-image: url("../images/white.jpg");
+  margin:0; /*takes out the extra space on the sides */
+  font-family: 'Muli', sans-serif;
+}
+
+
+
+
+/* ________________________________This is to customize the carousel________________________________ */
+
+img {
+  object-fit: cover;
+
+}
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* ________________________________This styles the little articles about box+flow________________________________ */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* ________________________________The responsive design________________________________ */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+
+
+/* ________________________________This deals with the cool footer sale________________________________ */
+#dabar{
+	background: rgb(252, 70, 30);
+	color: #fff;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+#dabar a{
+        color: #fff;
+        text-decoration:underline;
+        font-weight: normal;
+}
+
+
+
+
+
+
+
+/* ________________________________Calendar________________________________ */
+
+body {
+	font-family: Tahoma;
+}
+
+header {
+	text-align: center;
+}
+
+#calendar {
+	width: 100%;
+}
+
+#calendar a {
+	color: black;
+	text-decoration: none;
+}
+
+#calendar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#calendar li {
+	display: block;
+	float: left;
+	width:14.342%;
+	padding: 5px;
+	box-sizing:border-box;
+	border: 1px solid #ccc;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+	height: 40px;
+	background: #C80000;
+}
+
+#calendar ul.weekdays li {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 20px;
+	border: none !important;
+	padding: 10px 6px;
+	color: white;
+	font-size: 13px;
+}
+
+#calendar .days li {
+	height: 180px;
+  background: white;
+}
+
+#calendar .days li:hover {
+	background: white;
+}
+
+#calendar .date {
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 4px;
+	background: white;
+	color: black;
+	width: 20px;
+	border-radius: 50%;
+	float: right;
+}
+
+#calendar .event {
+	clear: both;
+	display: block;
+	font-size: 13px;
+	border-radius: 4px;
+	padding: 5px;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	line-height: 14px;
+	background: white;
+	border: 1px solid #b5dbdc;
+	color: red;
+	text-decoration: none;
+}
+
+#calendar .event-desc {
+	color: black;
+	margin: 3px 0 7px 0;
+	text-decoration: none;
+}
+
+#calendar .other-month {
+	background: #f5f5f5;
+	color: #666;
+}
+
+/* ============================
+				Mobile Responsiveness
+   ============================*/
+
+
+@media(max-width: 768px) {
+
+	#calendar .weekdays, #calendar .other-month {
+		display: none;
+	}
+
+	#calendar li {
+		height: auto !important;
+		border: 1px solid #ededed;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: -1px;
+	}
+
+	#calendar .date {
+		float: none;
+	}
+}
